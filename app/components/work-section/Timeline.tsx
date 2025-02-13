@@ -13,11 +13,10 @@ const TimelineData = [
     jobType: "Internship",
     duration: "Oct 2024 - Jan 2024",
     stuffIDid: [
-     "Led the design and development of the nin2creator platform, empowering over 50,000 users to acquire design skills, by architecting a scalable system using MERN stack and UI design using Figma.",
-"Integrated multilingual support to accommodate Japanese and English users via i18next, increasing accessibility and platform reach by 20%.",
-"Designed and integrated a secure authentication system using JWT and OAuth.",
-"Engineered a real-time analytics dashboard with Chart.js, enabling users to tailor their views, boosting engagement metrics.",
-,
+      "Led the design and development of the nin2creator platform, empowering over 50,000 users to acquire design skills, by architecting a scalable system using MERN stack and UI design using Figma.",
+      "Integrated multilingual support to accommodate Japanese and English users via i18next, increasing accessibility and platform reach by 20%.",
+      "Designed and integrated a secure authentication system using JWT and OAuth.",
+      "Engineered a real-time analytics dashboard with Chart.js, enabling users to tailor their views, boosting engagement metrics."
     ],
   },
   {
@@ -27,9 +26,9 @@ const TimelineData = [
     jobType: "Internship",
     duration: "July 2023 - Sept. 2023",
     stuffIDid: [
-      "Came up with cross functional login & sign up page designs that are now integral parts of the tools used within the company.",
-      "Led a team of fellow interns to design various templates and UI components common in internal applications such as dashboards, notification tabs, multi-step forms, tables with pagination etc. while making very impactful contributions.",
-      "I also helped interns grasp the basics of design enabling them to make meaningful contributions.",
+      "Came up with cross-functional login & sign-up page designs that are now integral parts of the tools used within the company.",
+      "Led a team of fellow interns to design various templates and UI components common in internal applications such as dashboards, notification tabs, multi-step forms, tables with pagination, etc. while making very impactful contributions.",
+      "I also helped interns grasp the basics of design, enabling them to make meaningful contributions."
     ],
   },
 ];
