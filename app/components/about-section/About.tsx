@@ -22,13 +22,20 @@ export default function About() {
 
   return (
     <section ref={ref} className="pt-24 md:pt-[150px]" id="about">
-      <AnimatedTitle
-        wordSpace={"mr-[14px]"}
-        charSpace={"mr-[0.001em]"}
-        className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
-      >
-      Turning Ideas into Impactful Digital Realities
-      </AnimatedTitle>
+   <AnimatedTitle
+  wordSpace={"mr-[14px]"}
+  charSpace={"mr-[0.001em]"}
+  className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
+>
+  Turning Ideas into
+</AnimatedTitle>
+<AnimatedTitle
+  wordSpace={"mr-[14px]"}
+  charSpace={"mr-[0.001em]"}
+  className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
+>
+  Impactful Digital Realities
+</AnimatedTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
