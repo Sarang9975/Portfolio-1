@@ -112,7 +112,7 @@ export default function Hero() {
       </div>
 
       {/* IMAGE */}
-      <div data-blobity-tooltip="Soft man">
+      <div data-blobity-tooltip="Pointer">
         <motion.div
           ref={imgRef}
           style={{ rotate }}
@@ -120,14 +120,23 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={animateIn1}
         >
-        <Image
-  src="/transparent-ade-min.png"
-  priority
-  width={1000}
-  height={1000}
-  alt="Ade's picture"
-  className="bg-image-radial px-10 pt-20 scale-[1.5] object-contain"
-/>
+       <motion.div
+  ref={imgRef}
+  className="h-image flex items-center w-[310px] h-[380px] xl:w-[390px] xl:h-[470px] justify-center relative"
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1.2, ease: "easeOut", delay: 1 }}
+>
+  <Image
+    src="/transparent-ade-min.png"
+    priority
+    width={1000}
+    height={1000}
+    alt="Ade's picture"
+    className="bg-image-radial px-10 pt-20 scale-[1.5] object-contain"
+  />
+</motion.div>
+
 
 
 

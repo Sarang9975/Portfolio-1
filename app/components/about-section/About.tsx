@@ -27,36 +27,28 @@ export default function About() {
         charSpace={"mr-[0.001em]"}
         className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
-        I amplify brand voices through the web
+      Turning Ideas into Impactful Digital Realities
       </AnimatedTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            My passion lies in creating strong business solutions that aid
-            business growth. Whether it&apos;s a website to boost brand
-            publicity or software solutions that streamline otherwise manual
-            processes, I love taking brands from point A to the their dreamy
-            point B and iteratively improve as time goes on.
+          Back in 2019, I wrote my first lines of code—completely clueless, yet endlessly curious. What started as a hobby soon turned into an obsession: building tech that doesn’t just exist but actually solves real business problems.
           </AnimatedBody>
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
-            From writing my first lines of code back in late 2019 to this point
-            I have continually refined my development skills overtime picking up
-            UI/UX design on the way & solving complex challenges increasing the
-            complexity as time goes by to ensure improvement.
+          Today, I specialize in crafting digital solutions that help businesses scale, automate, and dominate their industries. Whether it’s a sleek, high-converting website or a full-fledged software system that replaces hours of manual work with a few clicks, my mission is simple: bridge the gap between vision and execution.
           </AnimatedBody>
           <AnimatedBody className="inline leading-[34px] md:leading-[39px]">
-            Each challenge is unique so I ensure that I learn and grow through
-            each one ensuring that I not only put in my best but also deliver
-            solutions that businesses are proud to call their own. Wanna learn
-            more? Here&apos;s <br className="hidden md:block" />
+          I don’t just write code—I engineer experiences. Every project I take on is an opportunity to push limits, learn something new, and create solutions that don’t just meet expectations but obliterate them. I thrive on complexity, turning chaotic problems into elegant, functional, and scalable systems.
+
+          Tech evolves. Businesses grow. And so do I. Let’s build something extraordinary. 🚀 <br className="hidden md:block" />
             <Link
               className="underline"
               href={
                 "https://drive.google.com/file/d/1THvEcXwhyeWodP8G2yi7yFwNNSIuwRpX/view?usp=sharing"
               }
             >
-              my résumè
+              Resume Link
             </Link>
             .
           </AnimatedBody>
