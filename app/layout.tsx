@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
-import { Kumbh_Sans } from "next/font/google";
+import { Syne, Kumbh_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -8,11 +7,12 @@ import Header from "./components/header-section/Header";
 import { ViewProvider } from "@/contexts/ViewContext";
 
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] });
+const syne = Syne({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sarang Kadukar",
   description:
-    "A Frontend Engineer passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
+    "A Frontend Engineer passionate about crafting next-gen software. I drive growth by building user experiences that blend aesthetics with functionality. I thrive on turning ideas into seamless digital solutions.",
   keywords: [
     "frontend",
     "react",
@@ -22,30 +22,30 @@ export const metadata: Metadata = {
     "frontend engineer",
     "developer portfolio",
     "creative development",
-    "nigeria",
+    "india",
     "software",
     "software developer",
     "software engineer",
     "portfolio",
   ],
   openGraph: {
-    title: "Adeola Badero — Frontend Software Engineer",
+    title: "Sarang Kadukar — Frontend Engineer",
     description:
-      "Frontend Engineer formerly at Bluechip Technologies, passionate about crafting next-gen software and creative websites. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    url: "https://www.adeolabadero.me",
-    siteName: "www.adeolabadero.me",
+      "Frontend Engineer passionate about crafting next-gen software and creative websites. I drive growth by building user experiences that blend aesthetics with functionality. I thrive on turning ideas into seamless digital solutions.",
+    url: "https://yourdomain.com",       // ← your personal site URL
+    siteName: "Sarang Kadukar Portfolio", // ← your site name
     images: [
       {
-        url: "",
+        url: "https://yourdomain.com/og-image-1200x630.png",
         width: 1200,
         height: 630,
-        alt: "Adeola Badero — Frontend Software Engineer",
+        alt: "Sarang Kadukar — Frontend Engineer",
       },
       {
-        url: "",
+        url: "https://yourdomain.com/og-image-800x800.png",
         width: 800,
         height: 800,
-        alt: "Adeola Badero — Frontend Software Engineer",
+        alt: "Sarang Kadukar — Frontend Engineer",
       },
     ],
     locale: "en-US",
@@ -53,11 +53,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adeola Badero — Software Engineer",
+    title: "Sarang Kadukar — Frontend Engineer",
     description:
-      "Frontend Engineer at Bluechip Technologies, passionate about crafting next-gen software. I drive growth by crafting user experiences that blend aesthetics with functionality through my design and development skills. I thrive on turning ideas into seamless digital solutions.",
-    creator: "@Ade_the_great",
-    images: [""],
+      "Frontend Engineer passionate about crafting next-gen software and creative websites. I drive growth by building user experiences that blend aesthetics with functionality. I thrive on turning ideas into seamless digital solutions.",
+    creator: "@SarangKadukar",            // ← your Twitter handle
+    images: ["https://yourdomain.com/twitter-card.png"],
   },
   robots: {
     index: true,
@@ -81,14 +81,12 @@ export default function RootLayout({
       <body
         className={`${kumbhSans.className} max-w-[90%] xl:max-w-[1223px] w-full mx-auto overflow-x-hidden`}
       >
-        <>
-          <ViewProvider>
-            <Header />
-            {children}
-          </ViewProvider>
+        <ViewProvider>
+          <Header />
+          {children}
           <Analytics />
           <SpeedInsights />
-        </>
+        </ViewProvider>
       </body>
     </html>
   );

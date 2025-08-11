@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Tag from "./Tag";
+import type { StaticImageData } from "next/image";
 
 // @ts-ignore
 import "intersection-observer";
@@ -17,7 +18,7 @@ export default function FolioCard({
   about,
   stack,
 }: {
-  img: string;
+  img: string | StaticImageData;
   title: string;
   gitLink?: string;
   liveLink: string;
@@ -38,14 +39,12 @@ export default function FolioCard({
       }`}
     >
    <Image
-  src={img}
-  width={["Galerie", "Splore AI"].includes(title) ? 400 : 420} // Same width for both
-  height={["Galerie", "Splore AI"].includes(title) ? 680 : 700} // Same height for both
-  alt="work"
-  className={`rounded-[10px] w-full ${
-    ["Galerie", "Splore AI"].includes(title) ? "lg:w-[70%]" : "lg:w-full"
-  } lg:col-span-5`}
-/>
+    src={img}
+    width={420}
+    height={700}
+    alt="work"
+    className="rounded-[10px] w-full lg:w-full lg:col-span-5"
+  />
 
 
       <div className="flex flex-col gap-4 lg:col-span-7">

@@ -29,6 +29,22 @@ export default function Works() {
       stack: ["next.js", "typescript", "framer motion", "tailwindcss"],
       img: "/splorebhai.png",
     },
+    {
+      title: "FoodSense",
+      liveLink: "https://drive.google.com/drive/folders/1iqZUd2cKp8OunwkaZ64tebP2IfXfjcWP",
+      about:
+        "FoodSense is a smart mobile app that helps people with food allergies make safer choices by instantly scanning food labels using a phone camera. Powered by OCR, GPT-4, and AR overlays, it detects allergens—even hidden ones—in real time, without needing barcodes. With personalized allergy profiles, audio/visual alerts, multilingual support, and label-less food scanning, FoodSense makes ingredient transparency simple, fast, and accessible for everyone.",
+      stack: ["OCR", "GPT-4", "AR", "Mobile App"],
+      img: "/foodsense.jpg", // Placeholder image
+    },
+    {
+      title: "FindMyBills",
+      liveLink: "https://findmybills.vercel.app/",
+      about:
+        "FindMyBills is a sleek web app that centralizes invoice storage, making it easy to upload, search, and access invoices securely. Built with Next.js, Tailwind CSS, and Supabase, it offers fast performance, real-time search, and a clean UI—perfect for freelancers and businesses who want hassle-free billing management.",
+      stack: ["Next.js", "Tailwind CSS", "Supabase"],
+      img: "/findmybills.png", // Placeholder image
+    },
    
    
   ];
